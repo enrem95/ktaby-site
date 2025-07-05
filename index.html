@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>العلاقات السامة – Toxic Relationships | Emad Adel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Tajawal', 'Roboto', sans-serif;
+            background-color: #0a0a0a;
+            color: #f3f4f6;
+        }
+        
+        .en {
+            font-family: 'Roboto', sans-serif;
+            direction: ltr;
+            text-align: left;
+        }
+        
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .quote-slider {
+            transition: all 0.5s ease;
+        }
+        
+        .section-divider {
+            height: 100px;
+            background: linear-gradient(to bottom, #0a0a0a, #1a0000, #0a0a0a);
+        }
+        
+        .price-tag {
+            position: relative;
+        }
+        
+        .price-tag::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: #ef4444;
+            transform: rotate(-5deg);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-black/80 backdrop-blur-md fixed w-full z-50 border-b border-red-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-white font-bold text-xl">العلاقات السامة</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-4 space-x-reverse">
+                        <a href="#home" class="text-red-400 hover:text-red-300 px-3 py-2 rounded-md text-sm font-medium">الرئيسية</a>
+                        <a href="#about" class="text-white hover:text-red-300 px-3 py-2 rounded-md text-sm font-medium">عن الكتاب</a>
+                        <a href="#author" class="text-white hover:text-red-300 px-3 py-2 rounded-md text-sm font-medium">عن الكاتب</a>
+                        <a href="#quotes" class="text-white hover:text-red-300 px-3 py-2 rounded-md text-sm font-medium">اقتباسات</a>
+                        <a href="#testimonials" class="text-white hover:text-red-300 px-3 py-2 rounded-md text-sm font-medium">آراء القراء</a>
+                        <a href="#order" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md text-sm font-medium">اطلب الآن</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-white hover:text-red-300 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-black/90 backdrop-blur-lg border-t border-red-900/50">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="text-red-400 block px-3 py-2 rounded-md text-base font-medium">الرئيسية</a>
+                <a href="#about" class="text-white hover:text-red-300 block px-3 py-2 rounded-md text-base font-medium">عن الكتاب</a>
+                <a href="#author" class="text-white hover:text-red-300 block px-3 py-2 rounded-md text-base font-medium">عن الكاتب</a>
+                <a href="#quotes" class="text-white hover:text-red-300 block px-3 py-2 rounded-md text-base font-medium">اقتباسات</a>
+                <a href="#testimonials" class="text-white hover:text-red-300 block px-3 py-2 rounded-md text-base font-medium">آراء القراء</a>
+                <a href="#order" class="bg-red-600 hover:bg-red-700 text-white block px-4 py-2 rounded-md text-base font-medium text-center">اطلب الآن</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg min-h-screen flex items-center justify-center pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">العلاقات السامة <span class="en">Toxic Relationships</span></h1>
+                <h2 class="text-xl md:text-2xl text-red-300 mb-8">✍ إعداد: عماد عادل <span class="en">By Emad Adel</span></h2>
+                
+                <div class="max-w-3xl mx-auto">
+                    <p class="text-lg md:text-xl text-white mb-6 leading-relaxed">
+                        "عندما يتحول الحب إلى قيد والرعاية إلى أداة للتحكم"
+                    </p>
+                    <p class="en text-lg md:text-xl text-white mb-10 leading-relaxed">
+                        "When love turns into chains and care becomes a tool for control"
+                    </p>
+                </div>
+                
+                <a href="#order" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 inline-block">
+                    اطلب نسختك الآن <span class="en">Order Your Copy</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Description -->
+    <section id="about" class="py-20 bg-gradient-to-b from-black to-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">عن الكتاب <span class="en">About the Book</span></h2>
+                <div class="w-20 h-1 bg-red-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <div class="bg-gray-900/50 border border-red-900/30 rounded-xl p-8 shadow-lg">
+                        <h3 class="text-2xl font-bold text-red-400 mb-6">الوصف بالعربية</h3>
+                        <p class="text-gray-300 leading-relaxed mb-6">
+                            في هذا الكتاب المهم، يأخذنا عماد عادل في رحلة عميقة إلى أعماق العلاقات السامة التي قد نعيشها دون أن ندرك مدى ضررها. الكتاب ليس مجرد تحليل للحب السام، بل هو دليل عملي للتعرف على هذه العلاقات والخروج منها بسلام.
+                        </p>
+                        <p class="text-gray-300 leading-relaxed mb-6">
+                            من خلال قصص حقيقية وأبحاث علمية، يكشف الكتاب عن الآليات الخفية التي تجعلنا نستمر في علاقات مؤذية، وكيف يمكن كسر هذه الحلقة المفرغة. ستتعلم كيف تميز بين الحب الحقيقي والاعتماد العاطفي، وكيف تبني حدودًا صحية في علاقاتك.
+                        </p>
+                        <p class="text-gray-300 leading-relaxed">
+                            هذا الكتاب هو بداية رحلة الشفاء وإعادة اكتشاف الذات بعد العلاقات المؤذية. إنه نور في نهاية النفق المظلم للعلاقات السامة.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="order-1 md:order-2">
+                    <div class="bg-gray-900/50 border border-red-900/30 rounded-xl p-8 shadow-lg en">
+                        <h3 class="text-2xl font-bold text-red-400 mb-6">English Description</h3>
+                        <p class="text-gray-300 leading-relaxed mb-6">
+                            In this important book, Emad Adel takes us on a profound journey into the depths of toxic relationships we might live without realizing their harm. The book is not just an analysis of toxic love, but a practical guide to recognize these relationships and exit them safely.
+                        </p>
+                        <p class="text-gray-300 leading-relaxed mb-6">
+                            Through real stories and scientific research, the book reveals the hidden mechanisms that keep us in abusive relationships, and how to break this vicious cycle. You'll learn to distinguish between true love and emotional dependence, and how to build healthy boundaries in your relationships.
+                        </p>
+                        <p class="text-gray-300 leading-relaxed">
+                            This book is the beginning of a healing journey and rediscovering yourself after abusive relationships. It's light at the end of the dark tunnel of toxic relationships.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- About Author -->
+    <section id="author" class="py-20 bg-gradient-to-b from-gray-900 to-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">عن الكاتب <span class="en">About the Author</span></h2>
+                <div class="w-20 h-1 bg-red-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-12 items-center">
+                <div class="md:col-span-1 flex justify-center">
+                    <div class="relative">
+                        <div class="w-64 h-64 bg-red-900/20 rounded-full absolute -inset-1 blur-lg"></div>
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Emad Adel" class="w-64 h-64 rounded-full object-cover border-4 border-red-600 relative">
+                    </div>
+                </div>
+                
+                <div class="md:col-span-2">
+                    <div class="bg-gray-900/50 border border-red-900/30 rounded-xl p-8 shadow-lg">
+                        <h3 class="text-2xl font-bold text-red-400 mb-6">عماد عادل <span class="en">Emad Adel</span></h3>
+                        <p class="text-gray-300 leading-relaxed mb-6">
+                            كاتب وباحث متخصص في العلاقات الإنسانية والصحة النفسية. حاصل على ماجستير في علم النفس الإكلينيكي من جامعة القاهرة، وعمل لأكثر من 15 عامًا في مجال الإرشاد النفسي والعلاج الأسري.
+                        </p>
+                        <p class="text-gray-300 leading-relaxed mb-6 en">
+                            Writer and researcher specializing in human relationships and mental health. Holds a Master's degree in Clinical Psychology from Cairo University, with over 15 years of experience in psychological counseling and family therapy.
+                        </p>
+                        <p class="text-gray-300 leading-relaxed">
+                            قدم عماد العديد من المحاضرات وورش العمل في مجال العلاقات الصحية والحد من العنف الأسري. يهدف من خلال كتاباته إلى تمكين الأفراد من بناء علاقات صحية قائمة على الاحترام المتبادل والحدود الواضحة.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Quotes Slider -->
+    <section id="quotes" class="py-20 bg-gradient-to-b from-black to-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">اقتباسات من الكتاب <span class="en">Book Quotes</span></h2>
+                <div class="w-20 h-1 bg-red-600 mx-auto"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto relative">
+                <div class="overflow-hidden">
+                    <div id="quote-slider" class="flex transition-transform duration-500">
+                        <!-- Quote 1 -->
+                        <div class="min-w-full px-4">
+                            <div class="bg-gray-900/50 border border-red-900/30 rounded-xl p-8 shadow-lg text-center">
+                                <i class="fas fa-quote-left text-red-500 text-3xl mb-6"></i>
+                                <p class="text-xl text-white mb-8 leading-relaxed">
+                                    "الحب لا يجرح، لكن التعلق المرضي يفعل. الفرق بينهما هو الفرق بين الحرية والسجن"
+                                </p>
+                                <p class="en text-xl text-white mb-8 leading-relaxed">
+                                    "Love doesn't hurt, but pathological attachment does. The difference between them is the difference between freedom and prison"
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Quote 2 -->
+                        <div class="min-w-full px-4">
+                            <div class="bg-gray-900/50 border border-red-900/30 rounded-xl p-8 shadow-lg text-center">
+                                <i class="fas fa-quote-left text-red-500 text-3xl mb-6"></i>
+                                <p class="text-xl text-white mb-8 leading-relaxed">
+                                    "العلاقة الصحية تشبه التنفس: تأخذ وتعطي بحرية. أما السامة فتشبه الاختناق: كل شهيق يأتي بصعوبة، ولا تعرف متى سيمنعك الزفير"
+                                </p>
+                                <p class="en text-xl text-white mb-8 leading-relaxed">
+                                    "A healthy relationship is like breathing: you take and give freely. A toxic one is like suffocation: every inhale comes with difficulty, and you never know when the exhale will be blocked"
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Quote 3 -->
+                        <div class="min-w-full px-4">
+                            <div class="bg-gray-900/50 border border-red-900/30 rounded-xl p-8 shadow-lg text-center">
+                                <i class="fas fa-quote-left text-red-500 text-3xl mb-6"></i>
+                                <p class="text-xl text-white mb-8 leading-relaxed">
+                                    "الحدود ليست جدرانًا تفصلك عن من تحب، بل هي بوابات تحمي كرامتك وتضمن استمرار الحب باحترام"
+                                </p>
+                                <p class="en text-xl text-white mb-8 leading-relaxed">
+                                    "Boundaries are not walls that separate you from those you love, but gates that protect your dignity and ensure love continues with respect"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex justify-center mt-8 space-x-4">
+                    <button id="prev-quote" class="w-12 h-12 rounded-full bg-red-600 hover:bg-red-700 text-white flex items-center justify-center">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button id="next-quote" class="w-12 h-12 rounded-full bg-red-600 hover:bg-red-700 text-white flex items-center justify-center">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-20 bg-gradient-to-b from-gray-900 to-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">آراء القراء <span class="en">Testimonials</span></h2>
+                <div class="w-20 h-1 bg-red-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-900/50 border border-red-900/30 rounded-xl p-6 shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-red-900/30 flex items-center justify-center text-red-400 mr-4">
+                            <i class="fas fa-user text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-medium">سارة محمد</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">
+                        هذا الكتاب غير حياتي! ساعدني في فهم علاقتي السامة مع شريكي وكيف أخرج منها بكرامتي. أنصح به لكل من يشعر أنه عالق في علاقة مؤذية.
+                    </p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-900/50 border border-red-900/30 rounded-xl p-6 shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-red-900/30 flex items-center justify-center text-red-400 mr-4">
+                            <i class="fas fa-user text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-medium">أحمد خالد</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">
+                        الكتاب مليء بالأمثلة الواقعية والنصائح العملية. بعد قراءته، أصبحت أكثر وعيًا بحدودي في العلاقات وأكثر قدرة على حماية نفسي من التلاعب العاطفي.
+                    </p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-900/50 border border-red-900/30 rounded-xl p-6 shadow-lg en">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-red-900/30 flex items-center justify-center text-red-400 mr-4">
+                            <i class="fas fa-user text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-medium">Nourhan Ali</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">
+                        This book opened my eyes to patterns I kept repeating in relationships. The bilingual format makes it accessible to everyone. A must-read for anyone who wants to break free from toxic cycles.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="py-20 bg-gradient-to-b from-black to-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">احصل على نسختك الآن <span class="en">Order Your Copy</span></h2>
+                <div class="w-20 h-1 bg-red-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <div class="bg-gray-900/50 border border-red-900/30 rounded-xl p-8 shadow-lg text-center">
+                        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Book Cover" class="w-64 h-auto mx-auto mb-8 rounded-lg shadow-xl">
+                        
+                        <div class="flex justify-center items-center space-x-6 space-x-reverse mb-8">
+                            <div>
+                                <span class="text-gray-400 line-through text-xl price-tag">250 EGP</span>
+                                <span class="block text-3xl font-bold text-red-500 mt-2">200 EGP</span>
+                            </div>
+                            <div class="bg-red-600 text-white px-4 py-2 rounded-lg">
+                                <span class="block text-sm">توصيل مجاني</span>
+                                <span class="en block text-sm">Free Delivery</span>
+                            </div>
+                        </div>
+                        
+                        <a href="https://wa.me/201000000000?text=أريد%20شراء%20كتاب%20العلاقات%20السامة" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 inline-block mb-4">
+                            <i class="fab fa-whatsapp mr-2"></i> طلب عبر واتساب
+                        </a>
+                        
+                        <p class="text-gray-400 mt-4">
+                            الدفع عند الاستلام أو عبر التحويل البنكي
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="order-1 md:order-2">
+                    <div class="bg-gray-900/50 border border-red-900/30 rounded-xl p-8 shadow-lg">
+                        <h3 class="text-2xl font-bold text-red-400 mb-6">تواصل معنا <span class="en">Contact Us</span></h3>
+                        
+                        <form id="contact-form" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-gray-300 mb-2">الاسم <span class="en">Name</span></label>
+                                <input type="text" id="name" name="name" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-red-600">
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-gray-300 mb-2">البريد الإلكتروني <span class="en">Email</span></label>
+                                <input type="email" id="email" name="email" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-red-600">
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-gray-300 mb-2">الرسالة <span class="en">Message</span></label>
+                                <textarea id="message" name="message" rows="4" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-red-600"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                                إرسال <span class="en">Send</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-black">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gray-900/50 border border-red-900/30 rounded-xl p-8 shadow-lg text-center">
+                <h3 class="text-2xl font-bold text-white mb-4">اشترك في نشرتنا البريدية <span class="en">Subscribe to Our Newsletter</span></h3>
+                <p class="text-gray-400 mb-6">احصل على آخر التحديثات والمقالات حول العلاقات الصحية <span class="en">Get the latest updates and articles about healthy relationships</span></p>
+                
+                <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                    <input type="email" placeholder="بريدك الإلكتروني" class="flex-grow bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-red-600">
+                    <button type="submit" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 whitespace-nowrap">
+                        اشتراك <span class="en">Subscribe</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-white text-lg font-bold mb-4">العلاقات السامة</h4>
+                    <p class="text-gray-400">
+                        دليلك للخروج من العلاقات المؤذية وبناء روابط صحية قائمة على الاحترام المتبادل.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-white text-lg font-bold mb-4">روابط سريعة</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-red-400">الرئيسية</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-red-400">عن الكتاب</a></li>
+                        <li><a href="#author" class="text-gray-400 hover:text-red-400">عن الكاتب</a></li>
+                        <li><a href="#order" class="text-gray-400 hover:text-red-400">اطلب الآن</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white text-lg font-bold mb-4">تواصل معنا</h4>
+                    <ul class="space-y-2">
+                        <li class="text-gray-400"><i class="fas fa-phone-alt mr-2 text-red-500"></i> +20 100 000 0000</li>
+                        <li class="text-gray-400"><i class="fas fa-envelope mr-2 text-red-500"></i> info@toxic-relationships.com</li>
+                        <li class="text-gray-400"><i class="fas fa-map-marker-alt mr-2 text-red-500"></i> القاهرة، مصر</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white text-lg font-bold mb-4">تابعنا</h4>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-red-600">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-red-600">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-red-600">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-red-600">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                    © 2023 العلاقات السامة - جميع الحقوق محفوظة
+                </p>
+                <div class="flex space-x-6 space-x-reverse text-sm">
+                    <a href="#" class="text-gray-400 hover:text-red-400">شروط الخدمة</a>
+                    <a href="#" class="text-gray-400 hover:text-red-400">سياسة الخصوصية</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Quote slider
+        let currentQuote = 0;
+        const quotes = document.querySelectorAll('#quote-slider > div');
+        const totalQuotes = quotes.length;
+        
+        function showQuote(index) {
+            document.getElementById('quote-slider').style.transform = translateX(-${index * 100}%);
+        }
+        
+        document.getElementById('next-quote').addEventListener('click', function() {
+            currentQuote = (currentQuote + 1) % totalQuotes;
+            showQuote(currentQuote);
+        });
+        
+        document.getElementById('prev-quote').addEventListener('click', function() {
+            currentQuote = (currentQuote - 1 + totalQuotes) % totalQuotes;
+            showQuote(currentQuote);
+        });
+        
+        // Auto-advance quotes
+        setInterval(function() {
+            currentQuote = (currentQuote + 1) % totalQuotes;
+            showQuote(currentQuote);
+        }, 8000);
+        
+        // Form submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('شكرًا لتواصلك معنا! سنرد عليك في أقرب وقت ممكن.\n\nThank you for contacting us! We will get back to you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
