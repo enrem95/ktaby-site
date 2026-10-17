@@ -7,6 +7,16 @@ description: Professional export pipeline for motion graphics videos (After Effe
 
 Produce a clean master first, then derive every deliverable from it. Never re-encode a delivery file from another delivery file.
 
+## 0. Channel style reference (Dr. Emad Adel | الاستراتيجي)
+
+Source: the channel page only (banner, avatar, and video thumbnails). The video motion itself was not reviewed, so match the motion from a transcript or the user's notes, not from this section.
+
+- Channel focus: strategic management, leadership, and business development, taught in simple Arabic with practical examples.
+- Brand colours: near-black background, white headline text, and a bright yellow highlight block behind the key Arabic word or phrase.
+- Thumbnails: a presenter photo on a dark background, with a yellow sticker-style title and a small subtitle line in English (for example "Presentation Skills" or "AI"). Keep that layout for thumbnail exports.
+- Typography: a bold Arabic display face for headlines, a clean Latin face for the English subtitle lines. Titles often use a `|` separator, such as "كورس مهارات البريزنتيشن | ...".
+- Video length: long-form lessons (about 10 to 20 minutes), so the export spec should favour web 1080p H.264 over short-form vertical unless the user asks for Shorts.
+
 ## 1. Lock the spec before rendering
 
 Confirm these with the user if they are not stated. Use the defaults in brackets when they are not.
@@ -68,6 +78,7 @@ Use `project-name_deliverable_WIDTHxHEIGHT_FPSfps_vN.ext`, for example `brand-in
 
 ## Rules
 
+- Arabic text: use a font with full Arabic shaping (for example Cairo, Tajawal, or Noto Naskh Arabic) and set the text layer to right-to-left. Check every headline for broken letter joins and wrong punctuation placement before export. Keep numbers in Western digits unless the brief asks otherwise.
 - Do not upscale a low-resolution source and call it a master. Flag it instead.
 - Do not add a watermark, logo, or credit that was not in the brief.
 - If a render or encode fails, report the exact error output and the step that failed. Do not skip a verification step to finish faster.
