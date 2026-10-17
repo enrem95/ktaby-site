@@ -17,6 +17,18 @@ Source: the channel page only (banner, avatar, and video thumbnails). The video 
 - Typography: a bold Arabic display face for headlines, a clean Latin face for the English subtitle lines. Titles often use a `|` separator, such as "كورس مهارات البريزنتيشن | ...".
 - Video length: long-form lessons (about 10 to 20 minutes), so the export spec should favour web 1080p H.264 over short-form vertical unless the user asks for Shorts.
 
+### On-screen motion language (from one frame of "كورس مهارات البريزنتيشن | بطريقة المحترفين")
+
+This is a single still, so the timing and easing are unknown. Treat these as the visual vocabulary, not as measured motion.
+
+- Presenter on a warm, lit set with shelving and hexagon decor, framed mid-shot.
+- Case tag: a small yellow pill with a white label (for example "الحالة"), followed by a bold white headline with a yellow highlight word ("مشكلة بتتكرر كل يوم") and a smaller subtitle line below it.
+- Dialogue cards on the right: dark translucent rounded rectangles, each with a bold white role title (for example "العميل بيتصل", "الموظف الأول") and a grey sub-line. A thin yellow accent bar marks the card. Quoted speech appears as its own card in guillemets («...»).
+- A red time value in one card ("10:00") acts as a timestamp accent. Use red only for that kind of value.
+- Cards stack as a sequence of steps, not all at once, so plan one card per beat and keep each on screen long enough to read in Arabic.
+
+Export implications: keep card text at least 36 px at 1080p so it reads on a phone, keep cards inside the safe area, and check that the translucent backgrounds stay legible over the presenter footage.
+
 ## 1. Lock the spec before rendering
 
 Confirm these with the user if they are not stated. Use the defaults in brackets when they are not.
